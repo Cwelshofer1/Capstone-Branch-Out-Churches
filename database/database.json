@@ -1,0 +1,130 @@
+{
+   "users":[
+    {
+        "id": 1,
+         "name": "Joe Shomoe",
+         "Email": "Joeshomoe@joe.com",
+         "password": "Joeshomoe1",
+         "churchId": 1
+    },
+    {
+        "id": 2,
+        "name": "Mary Johnson",
+        "email": "mary.johnson@example.com",
+        "password": "MaryJ123",
+        "churchId": 1
+      },
+      {
+        "id": 3,
+        "name": "David Smith",
+        "email": "david.smith@example.com",
+        "password": "DavidS456",
+        "churchId": 2
+      },
+      {
+        "id": 4,
+        "name": "Sarah Adams",
+        "email": "sarah.adams@example.com",
+        "password": "SarahA789",
+        "churchId": 2
+      },
+      {
+        "id": 5,
+        "name": "Michael Brown",
+        "email": "michael.brown@example.com",
+        "password": "MikeB234",
+        "churchId": 1
+      }
+   ],
+   "churches":[
+    {
+    "id":1,
+    "name": "Holy Family",
+    "address": "9100 Crockett Rd, Brentwood, TN 37027",
+    "contactNumber":"(615) 373-4696",
+    "discription": " Holy Family is a large parish with over 2,500 families and over 50 different ministries. Their Catholic community, located in Brentwood, TN, exists to bring spiritual development to those who join us for prayer, education, worship, and service."
+
+   },
+   {
+    "id": 2,
+    "name:": "St. Ignatius",
+    "address": "601 Bell Rd, Antioch, TN 37013",
+    "contactNumber": "(615) 367-0085",
+    "discription": "St. Ignatius Catholic Church was founded in 1976 and the first masses were held in the cafeteria of Antioch High School on Blue Hole Road and at Antioch United Methodist Church on Antioch Pike just south of Nashville."
+
+   },
+   {
+    "id": 3,
+    "name": "St. Edwards",
+    "address":"188 Thompson Ln, Nashville, TN 37211",
+    "contactNumber": "(615) 833-5520",
+    "discription": "Whether you are a returning Catholic to St. Edward, a newcomer to the Nashville area or someone with an emerging interest in the Catholic faith, I, the parishioners and school families of St. Edward Catholic Parish welcome you to our home where we have been serving the Catholic community since 1952."
+   }
+
+   ],
+   "Events":[
+    {
+        "id": 1,
+        "title": "Silent retreat",
+        "timeStamp":"2025-03-17T00:00:00.000Z",
+        "description": "A fun morning and afternoon in coming together and learning and sharing experiences through silent prayer.",
+        "userId":1,
+        "churchId": 1
+
+
+    },
+    {
+        "id": 2,
+        "title": "Community Worship Night",
+        "timeStamp": "2025-03-20T18:00:00.000Z",
+        "description": "An evening of worship, music, and prayer to bring the community closer together.",
+        "userId": 2,
+        "churchId": 1
+    },
+    {
+        "id": 3,
+        "title": "Bible Study Gathering",
+        "timeStamp": "2025-03-22T19:00:00.000Z",
+        "description": "A group discussion diving deep into scripture, reflecting on its meaning and impact in our lives.",
+        "userId": 3,
+        "churchId": 2
+    },
+    {
+        "id": 4,
+        "title": "Youth Fellowship Meetup",
+        "timeStamp": "2025-03-24T16:00:00.000Z",
+        "description": "A social and spiritual gathering for young members to engage in fun activities and faith discussions.",
+        "userId": 4,
+        "churchId": 1
+    },
+    {
+        "id": 5,
+        "title": "Charity Outreach Program",
+        "timeStamp": "2025-03-30T10:00:00.000Z",
+        "description": "A day dedicated to helping the less fortunate through food drives and community service projects.",
+        "userId": 5,
+        "churchId": 2
+    },
+    {
+        "id": 6,
+        "title": "Easter Sunday Celebration",
+        "timeStamp": "2025-04-06T09:00:00.000Z",
+        "description": "A special service celebrating Easter with worship, a sermon, and a community feast.",
+        "userId": 6,
+        "churchId": 1
+    },
+    {
+        "id": 7,
+        "title": "Prayer and Healing Service",
+        "timeStamp": "2025-04-10T18:30:00.000Z",
+        "description": "An evening dedicated to prayer, healing, and spiritual restoration for all attendees.",
+        "userId": 7,
+        "churchId": 2
+    }
+   ],
+   "userConfirmingEvent":[
+ 
+   ]
+   
+
+}
