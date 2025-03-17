@@ -1,3 +1,22 @@
+import React from "react";
+import { Outlet, Route, Routes } from "react-router-dom";
+import { ChurchesList } from "../components/churches/ChurchList";
+import { NavBar } from "../components/nav/Navbar";
+import { Welcome } from "../components/welcome/Welcome";
+
 export const ApplicationViews = () => {
-  return <><h1>Hello world!!</h1></>
+
+    return <>
+    <Routes>
+        <Route path="/" element={
+            <>
+            <NavBar/>
+            <Outlet />
+            </>}>
+            <Route index element={<Welcome />} />
+            <Route path="/all-churches" element={<ChurchesList/>}/>
+        </Route>
+
+    </Routes>
+    </>
 }

@@ -35,7 +35,18 @@
       "password": "MikeB234",
       "churchId": 1
     },
-  
+    {
+      "email": "colinsemail@email.com",
+      "fullName": "Colin",
+      "isStaff": false,
+      "id": 6
+    },
+    {
+      "email": "blah@blah.com",
+      "fullName": "blahblah",
+      "isStaff": false,
+      "id": 7
+    },
     {
       "email": "email@email.com",
       "name": "",
@@ -58,6 +69,12 @@
       "name": "Carl Sanchez",
       "password": "carl",
       "id": 11
+    },
+    {
+      "email": "c@c.com",
+      "name": "c",
+      "password": "c",
+      "id": 12
     }
   ],
   "churches": [
@@ -70,7 +87,7 @@
     },
     {
       "id": 2,
-      "name:": "St. Ignatius",
+      "name": "St. Ignatius",
       "address": "601 Bell Rd, Antioch, TN 37013",
       "contactNumber": "(615) 367-0085",
       "discription": "St. Ignatius Catholic Church was founded in 1976 and the first masses were held in the cafeteria of Antioch High School on Blue Hole Road and at Antioch United Methodist Church on Antioch Pike just south of Nashville."
