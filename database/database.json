@@ -100,7 +100,7 @@
       "discription": "Whether you are a returning Catholic to St. Edward, a newcomer to the Nashville area or someone with an emerging interest in the Catholic faith, I, the parishioners and school families of St. Edward Catholic Parish welcome you to our home where we have been serving the Catholic community since 1952."
     }
   ],
-  "Events": [
+  "events": [
     {
       "id": 1,
       "title": "Silent retreat",

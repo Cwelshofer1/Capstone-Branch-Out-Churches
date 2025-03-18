@@ -7,6 +7,7 @@ import { ApplicationViews } from "./views/ApplicationViews.jsx"
 
 export const App = () => {
   return (
+  <div className="background-img">
     <Routes>
       <Route path="/login" element={<Login />}/>
       <Route path="/register" element={<Register/>} />
@@ -20,7 +21,8 @@ export const App = () => {
 
         </Route>
     </Routes>
-
+</div>
+    
 
   )
 }
