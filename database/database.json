@@ -95,21 +95,24 @@
       "name": "Holy Family",
       "address": "9100 Crockett Rd, Brentwood, TN 37027",
       "contactNumber": "(615) 373-4696",
-      "discription": " Holy Family is a large parish with over 2,500 families and over 50 different ministries. Their Catholic community, located in Brentwood, TN, exists to bring spiritual development to those who join us for prayer, education, worship, and service."
+      "discription": " Holy Family is a large parish with over 2,500 families and over 50 different ministries. Their Catholic community, located in Brentwood, TN, exists to bring spiritual development to those who join us for prayer, education, worship, and service.",
+      "creatorUserId": 1
     },
     {
       "id": 2,
-      "name": "St. Ignatius",
-      "address": "601 Bell Rd, Antioch, TN 37013",
-      "contactNumber": "(615) 367-0085",
-      "discription": "St. Ignatius Catholic Church was founded in 1976 and the first masses were held in the cafeteria of Antioch High School on Blue Hole Road and at Antioch United Methodist Church on Antioch Pike just south of Nashville."
+      "name": "St. Ignatius!!!!!!!!!!",
+      "address": "601 Bell Rd, Antioch, TN 37013!!!!!!!!!!!!!!",
+      "contactNumber": "(615) 367-0085!!!!!!!!!!!!!!",
+      "discription": "St. Ignatius Catholic Church was founded in 1976 and the first masses were held in the cafeteria of Antioch High School on Blue Hole Road and at Antioch United Methodist Church on Antioch Pike just south of Nashville.!!!!!!",
+      "creatorUserId": 12
     },
     {
       "id": 3,
       "name": "St. Edwards",
       "address": "188 Thompson Ln, Nashville, TN 37211",
       "contactNumber": "(615) 833-5520",
-      "discription": "Whether you are a returning Catholic to St. Edward, a newcomer to the Nashville area or someone with an emerging interest in the Catholic faith, I, the parishioners and school families of St. Edward Catholic Parish welcome you to our home where we have been serving the Catholic community since 1952."
+      "discription": "Whether you are a returning Catholic to St. Edward, a newcomer to the Nashville area or someone with an emerging interest in the Catholic faith, I, the parishioners and school families of St. Edward Catholic Parish welcome you to our home where we have been serving the Catholic community since 1952.",
+      "creatorUserId": 13
     }
   ],
   "events": [
@@ -119,14 +122,6 @@
       "timeStamp": "2025-03-17T00:00:00.000Z",
       "description": "A fun morning and afternoon in coming together and learning and sharing experiences through silent prayer.",
       "userId": 1,
-      "churchId": 1
-    },
-    {
-      "id": 2,
-      "title": "Community Worship Night",
-      "timeStamp": "2025-03-20T18:00:00.000Z",
-      "description": "An evening of worship, music, and prayer to bring the community closer together.",
-      "userId": 2,
       "churchId": 1
     },
     {
@@ -163,11 +158,11 @@
     },
     {
       "id": 7,
-      "title": "Praye",
-      "timeStamp": "2025-03-03T13:01",
-      "description": "WOW!!!!",
+      "title": "Easter Sunday ",
+      "timeStamp": "2025-04-06T09:00:00.000Z",
+      "description": ", a sermon, and a community feast.",
       "userId": 12,
-      "churchId": 2
+      "churchId": 1
     }
   ],
   "userConfirmingEvent": [
@@ -177,29 +172,9 @@
       "id": 6
     },
     {
-      "userId": 12,
-      "eventId": 1,
-      "id": 10
-    },
-    {
-      "userId": 12,
-      "eventId": 2,
-      "id": 11
-    },
-    {
-      "userId": 12,
-      "eventId": 3,
-      "id": 12
-    },
-    {
       "userId": 13,
       "eventId": 1,
       "id": 13
-    },
-    {
-      "userId": 13,
-      "eventId": 2,
-      "id": 14
     },
     {
       "userId": 14,
@@ -215,6 +190,16 @@
       "userId": 14,
       "eventId": 5,
       "id": 19
+    },
+    {
+      "userId": 14,
+      "eventId": 6,
+      "id": 20
+    },
+    {
+      "userId": 12,
+      "eventId": 1,
+      "id": 22
     }
   ]
 }

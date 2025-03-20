@@ -7,7 +7,7 @@ import { getAllChurches } from "../services/ChurchService"
 
 
 
-export const EditEventForm = ({currentUser, eventsObject}) => {
+export const EditEventForm = ({}) => {
 
     const [event, setAllEvents ] = useState({})
     const  [church, setAllChurches ] = useState([])

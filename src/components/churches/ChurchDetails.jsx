@@ -1,40 +1,40 @@
 import { useState, useEffect } from "react";
-import { getAllEvents } from "../services/EventService";
+import { getAllChurchesById } from "../services/ChurchService";
 import "./churches.css"
-import { useParams } from "react-router-dom";
+import { useParams} from "react-router-dom";
+import { ChurchButtons } from "./ChurchButtons";
 
 
-export const churchDetails =() => {
+export const ChurchDetails = ({currentUser}) => {
 
     const [allChurches, setAllChurches] = useState([])
 
-     const { userId } = useParams
+     const { id } = useParams()
 
     useEffect(() => {
-        getAllEvents(userId).then(data => {
+        getAllChurchesById(id).then(data => {
             const churchObj = data
             setAllChurches(churchObj)
         })
-    },[userId])
-}
+    },[id])
+
 
 return (
     <div>
         <h2>Church Details</h2>
-        <article className="churches">
+        <article>
             {allChurches.map(churchesObject => {
                 return (
                     <div>
-                    <Link key={churchesObject.id} to={`/all-churches/${churchesObject}`}>
                         <div>{churchesObject.name}</div>
-                        </Link>
                         <div>{churchesObject.address}</div>
                         <div>{churchesObject.contactNumber}</div>
                         <div>{churchesObject.discription}</div>
-                    
+                    <ChurchButtons currentUser={currentUser} churchObject={churchesObject}/>
                     </div>
                 )
             })}
         </article>
     </div>
 )
+}

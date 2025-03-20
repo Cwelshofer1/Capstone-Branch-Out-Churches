@@ -2,13 +2,12 @@ import { useEffect, useState } from "react"
 import { getAllEvents } from "../services/EventService"
 import { deleteEvent } from "../services/EventService"
 import { Link, useNavigate } from "react-router-dom"
-import { createUserattendingEvent, deleteUserAttending, getAllUserConfirmingEvents, getAllUserConfirmingEventsById } from "../services/UserConfirming"
+import { createUserattendingEvent, deleteUserAttending, getAllUserConfirmingEvents } from "../services/UserConfirming"
 
 export const EventButton = ({ currentUser, eventsObject }) => {
 
     const [allEvents, setAllEvents] = useState([])
     const [allUserAttendance, setAllUserAttendance] = useState([])
-    const [currentUserAttendance, setCurrentUserAttendance] = useState(null)
 
     const navigate = useNavigate()
     
@@ -69,7 +68,8 @@ export const EventButton = ({ currentUser, eventsObject }) => {
 
 return (
 
-    <div><div># of people attending {eventsObject.userConfirmingEvent?.length} </div>
+    <div>
+      <div># of people attending {eventsObject.userConfirmingEvent?.length} </div>
        
                         {currentUser?.id === eventsObject.userId ? (
                             <div>
@@ -92,7 +92,7 @@ return (
                                  <button
                                   className="filter-btn btn-primary"
                                   onClick={handleUnattending}>
-                                  Unattending Event
+                                  Not Attending Event
                                 </button>
                               ) : (
                                 <button

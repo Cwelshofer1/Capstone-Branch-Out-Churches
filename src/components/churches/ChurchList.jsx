@@ -20,12 +20,12 @@ return (
             {allChurches.map(churchesObject => {
                 return (
                     <div>
-                    <Link key={churchesObject.id} to={`/churches/${churchesObject.id}`}>
+                    <Link key={churchesObject.id} to={`/all-churches/${churchesObject.id}`}>
                         <div>{churchesObject.name}</div>
                         </Link>
                         <div>{churchesObject.address}</div>
                         <div>{churchesObject.contactNumber}</div>
-                        <div>{churchesObject.discription}</div>
+                        
                        
                     
                     </div>
