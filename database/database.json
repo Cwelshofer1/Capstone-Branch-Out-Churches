@@ -75,6 +75,18 @@
       "name": "c",
       "password": "c",
       "id": 12
+    },
+    {
+      "email": "b@b.com",
+      "name": "b",
+      "password": "b",
+      "id": 13
+    },
+    {
+      "email": "z@z.com",
+      "name": "z",
+      "password": "z",
+      "id": 14
     }
   ],
   "churches": [
@@ -151,12 +163,58 @@
     },
     {
       "id": 7,
-      "title": "Prayer and Healing Service",
-      "timeStamp": "2025-04-10T18:30:00.000Z",
-      "description": "An evening dedicated to prayer, healing, and spiritual restoration for all attendees.",
-      "userId": 7,
+      "title": "Praye",
+      "timeStamp": "2025-03-03T13:01",
+      "description": "WOW!!!!",
+      "userId": 12,
       "churchId": 2
     }
   ],
-  "userConfirmingEvent": []
+  "userConfirmingEvent": [
+    {
+      "userId": 13,
+      "eventId": 4,
+      "id": 6
+    },
+    {
+      "userId": 12,
+      "eventId": 1,
+      "id": 10
+    },
+    {
+      "userId": 12,
+      "eventId": 2,
+      "id": 11
+    },
+    {
+      "userId": 12,
+      "eventId": 3,
+      "id": 12
+    },
+    {
+      "userId": 13,
+      "eventId": 1,
+      "id": 13
+    },
+    {
+      "userId": 13,
+      "eventId": 2,
+      "id": 14
+    },
+    {
+      "userId": 14,
+      "eventId": 3,
+      "id": 17
+    },
+    {
+      "userId": 14,
+      "eventId": 1,
+      "id": 18
+    },
+    {
+      "userId": 14,
+      "eventId": 5,
+      "id": 19
+    }
+  ]
 }

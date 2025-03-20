@@ -10,8 +10,7 @@ export const EventsList = () => {
             setAllEvents(eventsArray)
         })
     }, [])
-
-
+    
 return (
     <div>
         <h2>Events</h2>
@@ -19,11 +18,12 @@ return (
             {allEvents.map(eventsObject => {
                 return (
                     <div>
-                    <Link key={eventsObject.id} to={`/events/${eventsObject}`}>
+                    <Link key={eventsObject.id} to={`/all-events/${eventsObject.id}`}>
                         <div>{eventsObject.title}</div>
                         </Link>
                         <div>{eventsObject.description}</div>
                         <div>{eventsObject.church.name}</div>
+                        <div>Attending: {eventsObject.userConfirmingEvent?.length || 0}</div>
                         
                     
                     </div>

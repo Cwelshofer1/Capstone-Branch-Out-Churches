@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { getAllChurches } from "../services/ChurchService";
+import { getAllChurches } from "../services/ChurchService"
 import "./churches.css"
 
 export const ChurchesList = () => {
@@ -20,12 +20,13 @@ return (
             {allChurches.map(churchesObject => {
                 return (
                     <div>
-                    <Link key={churchesObject.id} to={`/churches/${churchesObject}`}>
+                    <Link key={churchesObject.id} to={`/churches/${churchesObject.id}`}>
                         <div>{churchesObject.name}</div>
                         </Link>
                         <div>{churchesObject.address}</div>
                         <div>{churchesObject.contactNumber}</div>
                         <div>{churchesObject.discription}</div>
+                       
                     
                     </div>
                 )
