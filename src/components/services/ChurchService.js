@@ -23,3 +23,13 @@ export const updateChurch = (church) => {
         body: JSON.stringify(church),
     })
 }
+
+export const createChurch = (church, currentUser) => {
+    return fetch(`http://localhost:8088/churches/`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(church, currentUser),
+    })
+}

@@ -29,7 +29,7 @@ return (
                         <div>{churchesObject.name}</div>
                         <div>{churchesObject.address}</div>
                         <div>{churchesObject.contactNumber}</div>
-                        <div>{churchesObject.discription}</div>
+                        <div>{churchesObject.description}</div>
                     <ChurchButtons currentUser={currentUser} churchObject={churchesObject}/>
                     </div>
                 )

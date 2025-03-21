@@ -87,6 +87,12 @@
       "name": "z",
       "password": "z",
       "id": 14
+    },
+    {
+      "email": "e@e.com",
+      "name": "e",
+      "password": "e",
+      "id": 15
     }
   ],
   "churches": [
@@ -113,6 +119,63 @@
       "contactNumber": "(615) 833-5520",
       "discription": "Whether you are a returning Catholic to St. Edward, a newcomer to the Nashville area or someone with an emerging interest in the Catholic faith, I, the parishioners and school families of St. Edward Catholic Parish welcome you to our home where we have been serving the Catholic community since 1952.",
       "creatorUserId": 13
+    },
+    {
+      "name": "church",
+      "address": "Church",
+      "contactNumber": "8888-999",
+      "discription": "A new church",
+      "id": 4
+    },
+    {
+      "title": "ffff",
+      "timeStamp": "2025-03-12T19:27",
+      "description": "dddddd",
+      "churchId": 2,
+      "id": 6
+    },
+    {
+      "title": "ffff",
+      "timeStamp": "2025-03-12T19:27",
+      "description": "dddddd",
+      "churchId": 2,
+      "id": 7
+    },
+    {
+      "title": "dddd",
+      "timeStamp": "2025-03-03T19:28",
+      "description": "dddd",
+      "churchId": 2,
+      "id": 8
+    },
+    {
+      "title": "dddd",
+      "timeStamp": "2025-03-03T19:28",
+      "description": "dddd",
+      "churchId": 2,
+      "id": 9
+    },
+    {
+      "title": "wwww",
+      "timeStamp": "2025-03-06T19:30",
+      "description": "wwww",
+      "churchId": 2,
+      "id": 10
+    },
+    {
+      "title": "wewewe",
+      "timeStamp": "2025-03-12T19:31",
+      "description": "wewewewe",
+      "churchId": 2,
+      "id": 11
+    },
+    {
+      "id": 12,
+      "name": "Church",
+      "address": "A Church",
+      "contactNumber": "8888",
+      "description": "A church",
+      "creatorUserId": 15
     }
   ],
   "events": [
@@ -163,6 +226,14 @@
       "description": ", a sermon, and a community feast.",
       "userId": 12,
       "churchId": 1
+    },
+    {
+      "title": "ddddd",
+      "timeStamp": "2025-03-12T22:33",
+      "description": "ddddd",
+      "userId": 12,
+      "churchId": 2,
+      "id": 8
     }
   ],
   "userConfirmingEvent": [
@@ -195,11 +266,6 @@
       "userId": 14,
       "eventId": 6,
       "id": 20
-    },
-    {
-      "userId": 12,
-      "eventId": 1,
-      "id": 22
     }
   ]
 }
