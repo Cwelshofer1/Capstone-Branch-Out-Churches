@@ -22,3 +22,12 @@ export const updateEvent = (event) => {
         body: JSON.stringify(event),
     })
 }
+export const createEvent = (event, currentUser) => {
+    return fetch(`http://localhost:8088/events/`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(event, currentUser),
+    })
+}

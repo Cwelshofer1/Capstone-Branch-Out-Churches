@@ -33,7 +33,7 @@ const handleSave = (evt) => {
         name: church.name,
         address: church.address,
         contactNumber: church.contactNumber,
-        discription: church.discription,
+        description: church.description,
         creatorUserId: church.creatorUserId,
         
 
@@ -71,7 +71,7 @@ const handleSave = (evt) => {
 
             <fieldset>
                     <div className="form-group">
-                        <label>Description:</label>
+                        <label>Address:</label>
                         <input
                             type="text" value={church?.address}
                             onChange={(evt) => {
@@ -101,10 +101,10 @@ const handleSave = (evt) => {
                     <div className="form-group">
                 <label>Description:</label>
                     <input type="text"
-                        value={church?.discription}
+                        value={church?.description}
                         onChange={(evt) => {
                             const copy = { ...church }
-                            copy.discription = evt.target.value
+                            copy.description = evt.target.value
                             setAllChurches(copy)
                         } } required className="form-container" />
                         </div>
