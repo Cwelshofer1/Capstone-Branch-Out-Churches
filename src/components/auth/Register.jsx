@@ -1,15 +1,24 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 import "./Login.css"
 import { getUserByEmail, createUser } from "../services/userService"
+import { getAllChurches } from "../services/ChurchService"
 
 export const Register = (props) => {
+  const  [church, setAllChurches ] = useState([])
   const [customer, setCustomer] = useState({
     email: "",
     name: "",
     
   })
   let navigate = useNavigate()
+
+  useEffect(() => {
+      getAllChurches().then((churchesArray) => {
+          setAllChurches(churchesArray)
+      })
+      
+  }, [])
 
   const registerNewUser = () => {
     createUser(customer).then((createdUser) => {
@@ -20,8 +29,10 @@ export const Register = (props) => {
             id: createdUser.id,
             name: createdUser.name,
             email: createdUser.email,
-            password: createdUser.password
+            password: createdUser.password,
+            churchId: createdUser.churchId
           })
+          
         )
 
         navigate("/")
@@ -47,6 +58,13 @@ export const Register = (props) => {
     copy[evt.target.id] = evt.target.value
     setCustomer(copy)
   }
+
+  const updateChurchId = (evt) => {
+    const copy = { ...customer }
+    copy[evt.target.id] = parseInt(evt.target.value)
+    setCustomer(copy)
+  }
+
 
   return (
     <main style={{ textAlign: "center" }}>
@@ -89,6 +107,22 @@ export const Register = (props) => {
               required
             />
           </div>
+        </fieldset>
+        <fieldset>
+        <select required
+                onChange={updateChurchId}
+                type="churchId"
+                id="churchId"
+                className="form-control">
+                
+                <option value="" required>Select a church...</option> 
+                {church.map(churchesObject => (
+                    
+                    <option key={churchesObject.id} value={churchesObject.id} > 
+                    {churchesObject.name}
+                    </option>
+                     ))}
+                </select>
         </fieldset>
         <fieldset>
           <div className="form-group">
