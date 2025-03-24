@@ -1,17 +1,14 @@
-import { useState } from "react"
-import { deleteChurch } from "../services/ChurchService"
-import { Link, useNavigate } from "react-router-dom"
-import { getAllChurches } from "../services/ChurchService"
+import { useState, useEffect } from "react"
+import { Link, useNavigate, useParams } from "react-router-dom"
 import { getAllUsers } from "../services/userService"
 import { deleteUser } from "../services/userService"
-
+import { getAllUsersById } from "../services/userService"
 
 
 export const UserButtons = ({ currentUser, usersObject }) => {
 
     const [allUsers, setAllUsers] = useState([])
-    
-
+    const { id } = useParams()
     const navigate = useNavigate()
     
     const getAndSetUsers = () => {
@@ -19,6 +16,13 @@ export const UserButtons = ({ currentUser, usersObject }) => {
           setAllUsers(usersArray)
         })
       }
+
+    useEffect(() => {
+   getAllUsersById(id).then((data) => {
+        const userObj = data[0]
+        setAllUsers(userObj)
+    })
+}, [id])
    
     const handleDelete = () => {
         deleteUser(allUsers.id).then(() => {

@@ -69,7 +69,7 @@ export const EventButton = ({ currentUser, eventsObject }) => {
 return (
 
     <div>
-      <div># of people attending {eventsObject.userConfirmingEvent?.length} </div>
+      <div>Number of people attending: {eventsObject.userConfirmingEvent?.length} </div>
        
                         {currentUser?.id === eventsObject.userId ? (
                             <div>
