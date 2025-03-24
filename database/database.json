@@ -36,51 +36,11 @@
       "churchId": 1
     },
     {
-      "email": "ff@ff.com",
-      "name": "ff",
-      "password": "ff",
-      "churchId": 1,
-      "id": 6
-    },
-    {
-      "email": "fg@fg.com",
-      "name": "fg",
-      "password": "fg",
-      "churchId": 2,
-      "id": 7
-    },
-    {
-      "email": "colinw@colinw.com",
-      "name": "Colinw",
-      "password": "colinw",
+      "email": "c@c.com",
+      "name": "c",
+      "password": "c",
       "churchId": 6,
-      "id": 8
-    },
-    {
-      "email": "vvv@vvv.com",
-      "name": "vvv",
-      "password": "vvv",
-      "churchId": 2,
-      "id": 9
-    },
-    {
-      "id": 10,
-      "name": "ccc",
-      "email": "cc@c.com",
-      "churchId": 6
-    },
-    {
-      "email": "j@j.com",
-      "name": "j",
-      "password": "j",
-      "churchId": 2,
-      "id": 11
-    },
-    {
-      "id": 12,
-      "name": "cvvv",
-      "email": "cvvvv@cv.com",
-      "churchId": 6
+      "id": 6
     }
   ],
   "churches": [
@@ -173,99 +133,7 @@
       "description": "A day dedicated to helping the less fortunate through food drives and community service projects.",
       "userId": 5,
       "churchId": 2
-    },
-    {
-      "id": 6,
-      "title": "Easter Sunday Celebration",
-      "timeStamp": "2025-04-06T09:00:00.000Z",
-      "description": "A special service celebrating Easter with worship, a sermon, and a community feast.",
-      "userId": 6,
-      "churchId": 1
-    },
-    {
-      "id": 7,
-      "title": "rerere",
-      "timeStamp": "2025-02-27T13:22",
-      "description": "erererer",
-      "userId": 6,
-      "churchId": 2
     }
   ],
-  "userConfirmingEvent": [
-    {
-      "userId": 7,
-      "eventId": 3,
-      "id": 2
-    },
-    {
-      "userId": 7,
-      "eventId": 1,
-      "id": 3
-    },
-    {
-      "userId": 7,
-      "eventId": 4,
-      "id": 4
-    },
-    {
-      "userId": 7,
-      "eventId": 5,
-      "id": 5
-    },
-    {
-      "userId": 7,
-      "eventId": 6,
-      "id": 6
-    },
-    {
-      "userId": 7,
-      "eventId": 7,
-      "id": 7
-    },
-    {
-      "userId": 8,
-      "eventId": 3,
-      "id": 9
-    },
-    {
-      "userId": 8,
-      "eventId": 4,
-      "id": 10
-    },
-    {
-      "userId": 8,
-      "eventId": 5,
-      "id": 11
-    },
-    {
-      "userId": 8,
-      "eventId": 6,
-      "id": 12
-    },
-    {
-      "userId": 8,
-      "eventId": 7,
-      "id": 13
-    },
-    {
-      "userId": 9,
-      "eventId": 4,
-      "id": 16
-    },
-    {
-      "userId": 9,
-      "eventId": 6,
-      "id": 18
-    },
-    {
-      "userId": 9,
-      "eventId": 7,
-      "id": 19
-    },
-    {
-      "userId": 9,
-      "eventId": 1,
-      "id": 20
-    }
-  ]
+  "userConfirmingEvent": []
 }

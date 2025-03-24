@@ -28,7 +28,7 @@ return (
             {allEvents.map(eventsObject => (    
                     <div>
                         <div>{eventsObject.title}</div>
-                        <div>{new Date(eventsObject.timeStamp).toLocaleDateString('en-us',{
+                        <div>Date: {new Date(eventsObject.timeStamp).toLocaleDateString('en-us',{
                         year: 'numeric',
                         month: 'long',
                         day: 'numeric',

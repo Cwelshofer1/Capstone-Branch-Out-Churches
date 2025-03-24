@@ -40,7 +40,8 @@ const handleSave = (evt) => {
         id: user.id,
         name: user.name,
         email: user.email,
-        churchId: user.churchId,
+        password: user.password,
+        churchId: user.churchId
        
         
 
