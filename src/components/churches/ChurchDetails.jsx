@@ -21,16 +21,18 @@ export const ChurchDetails = ({currentUser}) => {
 
 return (
     <div>
-        <h2>Church Details</h2>
+        <h2 className="header">Church Details</h2>
         <article>
             {allChurches.map(churchesObject => {
                 return (
-                    <div>
-                        <div>{churchesObject.name}</div>
-                        <div>{churchesObject.address}</div>
-                        <div>{churchesObject.contactNumber}</div>
-                        <div>{churchesObject.description}</div>
+                    <div className="church-container">
+                        <div className="church-box">
+                        <div className="church-box-name">{churchesObject.name}</div>
+                        <div className="church-box-address">Address: {churchesObject.address}</div>
+                        <div className="church-box-number">Contact Number: {churchesObject.contactNumber}</div>
+                        <div className="church-box-description">Description: {churchesObject.description}</div>
                     <ChurchButtons currentUser={currentUser} churchObject={churchesObject}/>
+                    </div>
                     </div>
                 )
             })}

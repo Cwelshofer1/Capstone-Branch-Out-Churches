@@ -1,8 +1,12 @@
+import treePng from './treeoflife.webp'
+import "./Welcome.css"
+
 export const Welcome = () => {
     return (
         <h1>
-            <span>Welcome To:</span>
-            <span>Branch Out Churches!</span>
+            <span className='welcome'>Welcome To:</span>
+            <span className='welcome'>Branch Out Churches!</span>
+         
         </h1>
     )
 }

@@ -34,10 +34,9 @@ export const Login = () => {
     <main className="container-login">
       <section>
         <form className="form-login" onSubmit={handleLogin}>
-          <h1>Branch Out Churches</h1>
-          <h2>Please sign in</h2>
+          <h1 className="header">Branch Out Churches</h1>
           <fieldset>
-            <div className="form-group">
+            <div className="login-box">
               <input
                 type="email"
                 value={email}
@@ -50,7 +49,7 @@ export const Login = () => {
             </div>
           </fieldset>
           <fieldset>
-            <div className="form-group">
+            <div className="login-box">
               <input
                 type="password"
                 value={password}
@@ -64,15 +63,15 @@ export const Login = () => {
           </fieldset>
           <fieldset>
             <div className="form-group">
-              <button className="login-btn btn-info" type="submit">
+              <button className="login-button" type="submit">
                 Sign in
               </button>
             </div>
           </fieldset>
         </form>
       </section>
-      <section>
-        <Link to="/register">Not a member yet?</Link>
+      <section className="login-box-member">
+        <Link onClick={() => window.scrollTo(0, 0)} to="/register">Not a member yet?</Link>
       </section>
     </main>
   )

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { getAllUsersById } from "../services/userService";
 import { useParams} from "react-router-dom";
 import { UserButtons } from "./ProfileButtons";
+import "./Profile.css"
 
 
 
@@ -21,16 +22,17 @@ export const ProfilePage = ({currentUser}) => {
 
 return (
     <div>
-        <h2>My Profile</h2>
+        <h2 className="header">My Profile</h2>
         <article>
             {usersProfile.map(usersObject => {
                 return (
-                    <div>
-                        <div>{usersObject.name}</div>
-                        <div>{usersObject.email}</div>
-                        <div>{usersObject.church.name}</div>
+                    <div className="profile-container">
+                        <div className="profile-box">
+                        <div className="profile-name">Name: {usersObject.name}</div>
+                        <div className="profile-email">Email: {usersObject.email}</div>
+                        <div className="profile-church">Church: {usersObject.church.name}</div>
                         <UserButtons currentUser={currentUser} usersObject={usersObject}/>
-                    
+                        </div>
                     </div>
                 )
             })}

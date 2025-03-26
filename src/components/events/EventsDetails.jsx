@@ -22,13 +22,14 @@ export const EventDetails = ({currentUser}) => {
 return (
 
     <div>
-        <h2>Event Details</h2>
+        <h2 className="header">Event Details</h2>
         
         <article className="events">
-            {allEvents.map(eventsObject => (    
-                    <div>
-                        <div>{eventsObject.title}</div>
-                        <div>Date: {new Date(eventsObject.timeStamp).toLocaleDateString('en-us',{
+            {allEvents.map(eventsObject => (   
+                <div className="event-container">
+                    <div className="event-box">
+                        <div className="event-box-title">{eventsObject.title}</div>
+                        <div className="event-box-date">Date: {new Date(eventsObject.timeStamp).toLocaleDateString('en-us',{
                         year: 'numeric',
                         month: 'long',
                         day: 'numeric',
@@ -37,12 +38,13 @@ return (
                         }
                             
                         )}</div>
-                        <div>Church: {eventsObject.church.name}</div>
-                        <div>{eventsObject.description}</div>
+                        <div className="event-box-church">Church: {eventsObject.church.name}</div>
+                        <div className="event-box-description">Description: {eventsObject.description}</div>
                         <div>Posted by: {eventsObject.user.name}</div>
                        
                         
                     <EventButton eventsObject={eventsObject} currentUser={currentUser}/>
+                         </div> 
                          </div> 
                         ))}
                         </article>

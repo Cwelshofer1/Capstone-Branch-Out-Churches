@@ -69,15 +69,15 @@ export const Register = (props) => {
   return (
     <main style={{ textAlign: "center" }}>
       <form className="form-login" onSubmit={handleRegister}>
-        <h1>Branch Out Churches!</h1>
-        <h2>Please Register</h2>
+        <h1 className="header">Register Form</h1>
+        
         <fieldset>
-          <div className="form-group">
+          <div className="register-box">
             <input
               onChange={updateCustomer}
               type="text"
               id="name"
-              className="form-control"
+              
               placeholder="Enter your name"
               required
               autoFocus
@@ -85,24 +85,24 @@ export const Register = (props) => {
           </div>
         </fieldset>
         <fieldset>
-          <div className="form-group">
+          <div className="register-box">
             <input
               onChange={updateCustomer}
               type="email"
               id="email"
-              className="form-control"
+              
               placeholder="Email address"
               required
             />
           </div>
         </fieldset>
         <fieldset>
-          <div className="form-group">
+          <div className="register-box">
             <input
               onChange={updateCustomer}
               type="password"
               id="password"
-              className="form-control"
+              
               placeholder="Please enter your password"
               required
             />
@@ -113,7 +113,7 @@ export const Register = (props) => {
                 onChange={updateChurchId}
                 type="churchId"
                 id="churchId"
-                className="form-control">
+                className="register-box-church">
                 
                 <option value="" required>Select a church...</option> 
                 {church.map(churchesObject => (
@@ -126,7 +126,7 @@ export const Register = (props) => {
         </fieldset>
         <fieldset>
           <div className="form-group">
-            <button className="login-btn btn-info" type="submit">
+            <button className="register-button" type="submit">
               Register
             </button>
           </div>

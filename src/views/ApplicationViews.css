@@ -1,9 +1,19 @@
 .background-img { 
-        background-image: url(C:\Users\16157\workspace\branch-out-churches\Untitled_design.png
+        background-image: url("../views/Untitled_design.png"
         );
-        background-size: cover;
+        background-repeat: repeat;
         height: 100vh;
-        object-fit: cover;
         margin: -10px -10px -10px -10px;
+         background-position: center;
+         opacity: 1.0;
 }
 
+@media (max-width: 900px) {
+        .background-img { 
+              height: 100vh;
+              background-size: cover;
+              height: 100vh;
+              margin: -10px -10px -10px -10px;
+               background-position: center;
+        }
+}
