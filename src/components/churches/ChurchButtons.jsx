@@ -30,18 +30,19 @@ export const ChurchButtons = ({ currentUser, churchObject }) => {
                     <div>
                         {currentUser?.id === churchObject.creatorUserId ? (
                             <div>
-
+                              <div className="church-buttons">
                              <button 
                               onClick={handleDelete}
-                            className="filter-btn btn-primary">
+                            className="church-button">
                                 Delete
                              </button>
-                            <Link to={`/all-churches/edit/${churchObject.id}`} >
+                            <Link onClick={() => window.scrollTo(0, 0)} to={`/all-churches/edit/${churchObject.id}`} >
                               <button 
-                              className="filter-btn btn-primary" >
+                              className="church-button" >
                                   Edit
                                </button>
                                </Link>
+                               </div>
                              </div> 
 
                         ) : (

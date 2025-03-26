@@ -43,10 +43,9 @@ const handleSave = (evt) => {
    
         <form className="profile">
             
-        <h2>New Event</h2>
-        <div>
-        
-            <div>
+        <h2 className="header">New Event</h2>
+        <div className="form-container">
+            <div className="form-box">
         
             
         <fieldset>
@@ -77,7 +76,9 @@ const handleSave = (evt) => {
                             required className="form-container" />
                     </div>
                 </fieldset><fieldset>
+                    <div>Date:</div>
                     <input type="datetime-local"
+                        className="datetime"
                         value={event?.timeStamp}
                         onChange={(evt) => {
                             const copy = { ...event }
@@ -106,7 +107,7 @@ const handleSave = (evt) => {
                 <fieldset>
                     <div className="form-group">
                         <button onClick={handleSave}
-                            className="form-btn btn-primary">Save Event</button>
+                            className="new-event-button">Save Event</button>
                     </div>
 
                 </fieldset>

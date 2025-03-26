@@ -73,30 +73,31 @@ return (
        
                         {currentUser?.id === eventsObject.userId ? (
                             <div>
-
+                              <div className="event-buttons">
                              <button 
                               onClick={handleDelete}
-                            className="filter-btn btn-primary">
+                            className="event-button">
                                 Delete
                              </button>
-                            <Link to={`/all-events/edit/${eventsObject.id}`} >
+                            <Link onClick={() => window.scrollTo(0, 0)} to={`/all-events/edit/${eventsObject.id}`} >
                               <button 
-                              className="filter-btn btn-primary" >
+                              className="event-button" >
                                   Edit
                                </button>
                                </Link>
+                             </div>
                              </div> 
 
                         ) : (
                             isUserAttending ? (
                                  <button
-                                  className="filter-btn btn-primary"
+                                  className="event-button-attending"
                                   onClick={handleUnattending}>
                                   Not Attending Event
                                 </button>
                               ) : (
                                 <button
-                                  className="filter-btn btn-primary"
+                                  className="event-button-attending"
                                   onClick={handleSaveEvent}>
                                   Attending Event!
                                 </button>

@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { createChurch } from "../services/ChurchService"
+import "./forms.css"
 
 
 
@@ -35,10 +36,10 @@ const handleSave = (evt) => {
 
     return (
    
-        <form className="profile">    
-        <h2>Add a new church to the list!</h2>
-        <div>
-            <div>
+        <form>    
+        <h2 className="header">Add a new church to the list!</h2>
+        <div className="form-container">
+            <div className="form-box">
         
             
         <fieldset>
@@ -76,6 +77,7 @@ const handleSave = (evt) => {
                     <div className="form-group">
                 <label>Contact Number:</label>
                     <input type="text"
+                    
                         value={church?.contactNumber}
                         onChange={(evt) => {
                             const copy = { ...church }
@@ -102,8 +104,8 @@ const handleSave = (evt) => {
 
                 <fieldset>
                     <div className="form-group">
-                        <button onClick={handleSave}
-                            className="form-btn btn-primary">Save Event</button>
+                        <button  onClick={handleSave}
+                            className="new-church-button">Save Church</button>
                     </div>
                 </fieldset>
                </div>   

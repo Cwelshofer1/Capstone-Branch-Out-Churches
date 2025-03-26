@@ -48,9 +48,9 @@ const handleSave = (evt) => {
     return (
    
         <form className="profile">    
-        <h2>Update Church Information</h2>
-        <div>
-            <div>
+        <h2 className="header">Update Church Information</h2>
+        <div className="form-container">
+            <div className="form-box">
         
             
         <fieldset>
@@ -115,7 +115,7 @@ const handleSave = (evt) => {
                 <fieldset>
                     <div className="form-group">
                         <button onClick={handleSave}
-                            className="form-btn btn-primary">Save Event</button>
+                            className="edit-church-button">Save Church</button>
                     </div>
                 </fieldset>
                </div>   

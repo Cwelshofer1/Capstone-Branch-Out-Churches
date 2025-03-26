@@ -3,6 +3,7 @@ import { Link, useNavigate, useParams } from "react-router-dom"
 import { getAllUsers } from "../services/userService"
 import { deleteUser } from "../services/userService"
 import { getAllUsersById } from "../services/userService"
+import "./Profile.css"
 
 
 export const UserButtons = ({ currentUser, usersObject }) => {
@@ -35,16 +36,16 @@ export const UserButtons = ({ currentUser, usersObject }) => {
             return (
                     <div>
                         {currentUser?.id === usersObject.id ? (
-                            <div>
+                            <div className="profile-button">
 
                              <button 
                               onClick={handleDelete}
-                            className="filter-btn btn-primary">
+                            className="profile-buttons">
                                 Delete
                              </button>
-                            <Link to={`/profile/edit/${usersObject.id}`} >
+                            <Link onClick={() => window.scrollTo(0, 0)} to={`/profile/edit/${usersObject.id}`} >
                               <button 
-                              className="filter-btn btn-primary" >
+                              className="profile-buttons" >
                                   Edit
                                </button>
                                </Link>

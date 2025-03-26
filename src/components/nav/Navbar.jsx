@@ -1,7 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import "./NavBar.css"
-import { useEffect, useState } from "react";
-import { getAllUsers } from "../services/userService";
+
 
 export const NavBar = ({currentUser}) => {
    
@@ -12,18 +11,19 @@ const navigate = useNavigate()
 
 return (
     
-<div className="navbar-container">
+<nav className="navbar-container">
 
     <ul className="navbar-list">
         
-        <Link to="/all-events"><li>All Events</li></Link>
-        <Link to="/new-event"><li>New Event</li></Link>
-        <Link to="/all-churches"><li>All Churches</li></Link>
-        <Link to="/new-church"><li>New Church</li></Link>
-        <Link to={`/profile/${currentUser.id}`}><li>Profile</li></Link>
+        <Link onClick={() => window.scrollTo(0, 0)} to="/all-events"><li>All Events</li></Link>
+        <Link onClick={() => window.scrollTo(0, 0)} to="/new-event"><li>New Event</li></Link>
+        <Link onClick={() => window.scrollTo(0, 0)} to="/all-churches"><li className="allchurches">All Churches</li></Link>
+        <Link onClick={() => window.scrollTo(0, 0)} to="/new-church"><li>New Church</li></Link>
+        <Link onClick={() => window.scrollTo(0, 0)} to={`/profile/${currentUser.id}`}><li className="profile">Profile</li></Link>
      
         
         {localStorage.getItem("church_user") ? (
+            
             <Link
             to=""
             onClick={() => {
@@ -31,14 +31,14 @@ return (
                 navigate("/login", { replace: true})
             }}
             >
-                <li>Logout</li>
+                <li className="logout">Logout</li>
             </Link>
         ) : (
             ""
             
         )}
     </ul>
-</div>
+</nav>
 
  )
 
