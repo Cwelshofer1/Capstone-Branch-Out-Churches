@@ -87,7 +87,6 @@ return (
                                </Link>
                              </div>
                              </div> 
-
                         ) : (
                             isUserAttending ? (
                                  <button

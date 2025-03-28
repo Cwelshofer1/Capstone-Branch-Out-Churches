@@ -1,5 +1,5 @@
 export const getAllEvents = () => {
-    return fetch("http://localhost:8088/events/?_expand=church&_expand=user&_embed=userConfirmingEvent").then((res) => res.json())
+    return fetch("http://localhost:8088/events?_expand=church&_expand=user&_embed=userConfirmingEvent").then((res) => res.json())
 }
 
 export const getAllEventsById = (id) => {
@@ -30,4 +30,8 @@ export const createEvent = (event, currentUser) => {
         },
         body: JSON.stringify(event, currentUser),
     })
+}
+
+export const getUserEvents = () => {
+    return fetch("http://localhost:8088/events/?_expand=user").then((res) => res.json())
 }
