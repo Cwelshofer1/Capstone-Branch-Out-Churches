@@ -39,3 +39,4 @@ export const updateUser = (user) => {
       body: JSON.stringify(user),
   })
 }
+

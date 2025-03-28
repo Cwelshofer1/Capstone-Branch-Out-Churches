@@ -36,67 +36,18 @@
       "churchId": 1
     },
     {
-      "id": 7,
-      "name": "jj",
-      "email": "jj@j.com",
-      "password": "j",
-      "churchId": 8
-    },
-    {
-      "email": "cccc@cccc.com",
-      "name": "cccc",
-      "password": "cccc",
-      "churchId": 2,
-      "id": 8
-    },
-    {
-      "email": "mm@mm.com",
-      "name": "mm",
-      "password": "mm",
-      "churchId": 3,
-      "id": 9
-    },
-    {
-      "email": "hey@hey.com",
-      "name": "hey",
-      "password": "hey",
-      "churchId": 4,
-      "id": 10
-    },
-    {
-      "email": "ggg@ggg.com",
-      "name": "ggg",
-      "password": "ggg",
-      "churchId": 11,
-      "id": 11
-    },
-    {
       "email": "c@c.com",
       "name": "c",
       "password": "c",
-      "churchId": 8,
-      "id": 12
+      "churchId": 1,
+      "id": 6
     },
     {
-      "id": 13,
-      "name": "daveb",
-      "email": "dave@email.com",
-      "password": "12345",
-      "churchId": 3
-    },
-    {
-      "email": "cc@c.com",
-      "name": "cc",
-      "password": "cc",
-      "churchId": 5,
-      "id": 14
-    },
-    {
-      "id": 15,
-      "name": "bb",
-      "email": "bb@bb.com",
-      "password": "bb",
-      "churchId": 2
+      "email": "b@b.com",
+      "name": "b",
+      "password": "b",
+      "churchId": 1,
+      "id": 7
     }
   ],
   "churches": [
@@ -114,7 +65,7 @@
       "address": "601 Bell Rd, Antioch, TN 37013!!!!!!!!!!!!!!",
       "contactNumber": "(615) 367-0085!!!!!!!!!!!!!!",
       "description": "St. Ignatius Catholic Church was founded in 1976 and the first masses were held in the cafeteria of Antioch High School on Blue Hole Road and at Antioch United Methodist Church on Antioch Pike just south of Nashville.!!!!!!",
-      "creatorUserId": 12
+      "creatorUserId": 2
     },
     {
       "id": 3,
@@ -122,87 +73,7 @@
       "address": "188 Thompson Ln, Nashville, TN 37211",
       "contactNumber": "(615) 833-5520",
       "discription": "Whether you are a returning Catholic to St. Edward, a newcomer to the Nashville area or someone with an emerging interest in the Catholic faith, I, the parishioners and school families of St. Edward Catholic Parish welcome you to our home where we have been serving the Catholic community since 1952.",
-      "creatorUserId": 13
-    },
-    {
-      "id": 4,
-      "name": "name",
-      "address": "address",
-      "contactNumber": "contact",
-      "description": "description",
-      "creatorUserId": 13
-    },
-    {
-      "name": "Church2",
-      "address": "address2",
-      "contactNumber": "contact2",
-      "description": "description2",
-      "creatorUserId": 13,
-      "id": 5
-    },
-    {
-      "name": "church3",
-      "address": "church3",
-      "contactNumber": "church3",
-      "description": "church3",
-      "creatorUserId": 13,
-      "id": 6
-    },
-    {
-      "name": "erer",
-      "address": "erer",
-      "contactNumber": "erer",
-      "description": "erer",
-      "creatorUserId": 6,
-      "id": 7
-    },
-    {
-      "name": "Church",
-      "address": "Church 343",
-      "contactNumber": "949494",
-      "description": "A nice church.",
-      "creatorUserId": 7,
-      "id": 8
-    },
-    {
-      "name": "New Church",
-      "address": "New Address",
-      "contactNumber": "1010101010",
-      "description": "New description",
-      "creatorUserId": 6,
-      "id": 10
-    },
-    {
-      "name": "New church again",
-      "address": "nowhere",
-      "contactNumber": "343434",
-      "description": "Again new church",
-      "creatorUserId": 10,
-      "id": 11
-    },
-    {
-      "id": 12,
-      "name": "NEW CHURCH",
-      "address": "ADDRESS",
-      "contactNumber": "9999",
-      "description": "DESCRIPTION",
-      "creatorUserId": 11
-    },
-    {
-      "id": 13,
-      "name": "A CHURCH!!!!!",
-      "address": "Some Addressssss",
-      "contactNumber": "133333333",
-      "description": "DESCRIPTION!!!>>>",
-      "creatorUserId": 6
-    },
-    {
-      "id": 14,
-      "name": "Church",
-      "address": "church",
-      "contactNumber": "church",
-      "description": "church",
-      "creatorUserId": 14
+      "creatorUserId": 2
     }
   ],
   "events": [
@@ -239,70 +110,37 @@
       "churchId": 2
     },
     {
-      "title": "Fun church time",
-      "timeStamp": "2025-03-06T14:48",
-      "description": "Church",
-      "userId": 10,
-      "churchId": 6,
-      "id": 8
+      "title": "Colins Event",
+      "timeStamp": "2025-03-06T22:46",
+      "description": "event ",
+      "userId": 6,
+      "churchId": 1,
+      "id": 6
     },
     {
-      "id": 10,
-      "title": "fff",
-      "timeStamp": "2025-02-28T15:59",
-      "description": "fff",
-      "userId": 11,
-      "churchId": 8
-    },
-    {
-      "id": 11,
-      "title": "BBQ Extravaganza",
-      "timeStamp": "2025-03-29T12:30",
-      "description": "that was a tough word",
-      "userId": 13,
-      "churchId": 3
+      "id": 7,
+      "title": "New Event",
+      "timeStamp": "2025-03-20T22:46",
+      "description": "Brand new event!",
+      "userId": 7,
+      "churchId": 2
     }
   ],
   "userConfirmingEvent": [
     {
-      "userId": 7,
-      "eventId": 1,
-      "id": 5
-    },
-    {
-      "userId": 7,
+      "userId": 6,
       "eventId": 3,
-      "id": 6
+      "id": 2
     },
     {
-      "userId": 7,
+      "userId": 6,
       "eventId": 4,
-      "id": 7
+      "id": 3
     },
     {
-      "userId": 7,
+      "userId": 6,
       "eventId": 5,
-      "id": 8
-    },
-    {
-      "userId": 8,
-      "eventId": 1,
-      "id": 10
-    },
-    {
-      "userId": 13,
-      "eventId": 1,
-      "id": 11
-    },
-    {
-      "userId": 13,
-      "eventId": 10,
-      "id": 12
-    },
-    {
-      "userId": 12,
-      "eventId": 8,
-      "id": 13
+      "id": 4
     }
   ]
 }

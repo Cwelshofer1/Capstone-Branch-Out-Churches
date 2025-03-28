@@ -14,6 +14,7 @@ import { NewChurchForm } from "../components/forms/NewChurch";
 import { NewEventForm } from "../components/forms/NewEvent";
 import { ProfilePage } from "../components/profile/Profile";
 import { EditProfile } from "../components/forms/EditProfile";
+import { MyEventList } from "../components/myEvents/MyEventsList";
 
 export const ApplicationViews = () => {
     const [currentUser, setCurrentUser] = useState({})
@@ -36,7 +37,8 @@ export const ApplicationViews = () => {
             <Route path="new-church" element={<NewChurchForm currentUser={currentUser}/>}/>
             <Route path="all-churches/:id" element={<ChurchDetails currentUser={currentUser}/>}/>
             <Route path="all-churches/edit/:id" element={<EditChurchForm currentUser={currentUser}/>}/>
-            <Route path="all-events" element={<EventsList/>}/>
+            <Route path="all-events" element={<EventsList currentUser={currentUser}/>}/>
+            <Route path="my-events/:id" element={<MyEventList currentUser={currentUser}/>}/>
             <Route path="new-event" element={<NewEventForm currentUser={currentUser}/>} />
             <Route path="all-events/:id" element={<EventDetails currentUser={currentUser} />} />
             <Route path="all-events/edit/:id" element={<EditEventForm currentUser={currentUser} />} />
