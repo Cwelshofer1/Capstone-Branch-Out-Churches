@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import { createEvent } from "../services/EventService"
 import { getAllChurches } from "../services/ChurchService"
 import { useNavigate } from "react-router-dom"
+import { getVerse } from "../services/VerseService"
 
 
 
@@ -10,6 +11,7 @@ export const NewEventForm = ({currentUser}) => {
 
     const [event, setAllEvents ] = useState({})
     const  [church, setAllChurches ] = useState([])
+    const [bibleVerse, setBibleVerse] = useState([])
    
     const navigate = useNavigate()
 
@@ -20,6 +22,12 @@ export const NewEventForm = ({currentUser}) => {
         
     }, [])
 
+       useEffect(() =>  {
+        getVerse().then((verseArray) => {
+            setBibleVerse(verseArray)
+        })
+       }, [])
+
 const handleSave = (evt) => {
     evt.preventDefault()
 
@@ -29,7 +37,11 @@ const handleSave = (evt) => {
         timeStamp: event.timeStamp,
         description: event.description,
         userId: currentUser.id,
-        churchId: event.churchId
+        churchId: event.churchId,
+        bibleBook: bibleVerse.random_verse.book,
+        bibleChapter: bibleVerse.random_verse.chapter,
+        bibleVerse: bibleVerse.random_verse.verse,
+        bibleText: bibleVerse.random_verse.text
 
     }
     createEvent(editedEvent).then(() => {

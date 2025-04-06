@@ -22,7 +22,7 @@ export const ProfilePage = ({currentUser}) => {
 
 return (
     <div>
-        <h2 className="header">My Profile</h2>
+        <h1 className="header">My Profile</h1>
         <article>
             {usersProfile.map(usersObject => {
                 return (

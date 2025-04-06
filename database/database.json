@@ -2,144 +2,128 @@
   "users": [
     {
       "id": 1,
-      "name": "Joe Shomoe",
-      "email": "Joeshomoe@joe.com",
-      "password": "Joeshomoe1",
+      "name": "cc",
+      "email": "cc@cc.com",
+      "password": "c",
       "churchId": 1
     },
     {
       "id": 2,
-      "name": "Mary Johnson",
-      "email": "mary.johnson@example.com",
-      "password": "MaryJ123",
-      "churchId": 1
+      "name": "b",
+      "email": "b@b.com",
+      "password": "b",
+      "churchId": 2
     },
     {
-      "id": 3,
-      "name": "David Smith",
-      "email": "david.smith@example.com",
-      "password": "DavidS456",
-      "churchId": 2
+      "email": "a@a.com",
+      "name": "a",
+      "password": "a",
+      "churchId": 2,
+      "isAdmin": true,
+      "adminCode": "new_admin!",
+      "id": 3
     },
     {
       "id": 4,
-      "name": "Sarah Adams",
-      "email": "sarah.adams@example.com",
-      "password": "SarahA789",
-      "churchId": 2
-    },
-    {
-      "id": 5,
-      "name": "Michael Brown",
-      "email": "michael.brown@example.com",
-      "password": "MikeB234",
+      "name": "colin",
+      "email": "colin@colin.com",
+      "password": "colin",
       "churchId": 1
-    },
-    {
-      "email": "c@c.com",
-      "name": "c",
-      "password": "c",
-      "churchId": 1,
-      "id": 6
-    },
-    {
-      "email": "b@b.com",
-      "name": "b",
-      "password": "b",
-      "churchId": 1,
-      "id": 7
     }
   ],
   "churches": [
     {
       "id": 1,
-      "name": "Holy Family",
-      "address": "9100 Crockett Rd, Brentwood, TN 37027",
-      "contactNumber": "(615) 373-4696",
-      "description": " Holy Family is a large parish with over 2,500 families and over 50 different ministries. Their Catholic community, located in Brentwood, TN, exists to bring spiritual development to those who join us for prayer, education, worship, and service.",
-      "creatorUserId": 1
+      "name": "St edwards!",
+      "address": "st edwards dr!",
+      "contactNumber": "1800-900-4400",
+      "description": "what",
+      "creatorUserId": 1,
+      "image": "https://images.squarespace-cdn.com/content/v1/5ab03ba4fcf7fdcc8267b69d/002ce838-7b39-43b6-a1c2-98f1374e02ff/hope+%286%29.png"
     },
     {
       "id": 2,
-      "name": "St. Ignatius!!!!!!!!!!",
-      "address": "601 Bell Rd, Antioch, TN 37013!!!!!!!!!!!!!!",
-      "contactNumber": "(615) 367-0085!!!!!!!!!!!!!!",
-      "description": "St. Ignatius Catholic Church was founded in 1976 and the first masses were held in the cafeteria of Antioch High School on Blue Hole Road and at Antioch United Methodist Church on Antioch Pike just south of Nashville.!!!!!!",
-      "creatorUserId": 2
+      "name": "Church #2234",
+      "address": "new address234",
+      "contactNumber": "1800023234",
+      "description": "just a church 234",
+      "creatorUserId": 2,
+      "image": "https://townsquare.media/site/152/files/2016/05/IMG_20160427_1028503801.jpg"
     },
     {
       "id": 3,
-      "name": "St. Edwards",
-      "address": "188 Thompson Ln, Nashville, TN 37211",
-      "contactNumber": "(615) 833-5520",
-      "discription": "Whether you are a returning Catholic to St. Edward, a newcomer to the Nashville area or someone with an emerging interest in the Catholic faith, I, the parishioners and school families of St. Edward Catholic Parish welcome you to our home where we have been serving the Catholic community since 1952.",
-      "creatorUserId": 2
+      "name": "St Edwards!!!",
+      "address": "St Edwards street!!!",
+      "contactNumber": "1800-333-4444-1234",
+      "description": "A description333",
+      "creatorUserId": 4,
+      "image": "https://visitpatrickcounty.org/wp-content/uploads/2023/03/mayberry-church-2.jpeg"
     }
   ],
   "events": [
     {
       "id": 1,
-      "title": "Silent retreat",
-      "timeStamp": "2025-03-17T00:00:00.000Z",
-      "description": "A fun morning and afternoon in coming together and learning and sharing experiences through silent prayer.",
+      "title": "Event!!",
+      "timeStamp": "2025-04-06T09:13",
+      "description": "Event!!",
       "userId": 1,
-      "churchId": 1
+      "churchId": 1,
+      "bibleBook": "1 Kings",
+      "bibleChapter": 12,
+      "bibleVerse": 27,
+      "bibleText": "If this people goes up to offer sacrifices in Yahweh’s house at Jerusalem, then the heart of this people will turn again to their lord, even to Rehoboam king of Judah; and they will kill me, and return to Rehoboam king of Judah.”\n"
+    },
+    {
+      "title": "Event",
+      "timeStamp": "2025-04-30T21:17",
+      "description": "Event",
+      "userId": 2,
+      "churchId": 1,
+      "bibleBook": "Isaiah",
+      "bibleChapter": 40,
+      "bibleVerse": 2,
+      "bibleText": "“Speak comfortably to Jerusalem; and call out to her that her warfare is accomplished, that her iniquity is pardoned, that she has received of Yahweh’s hand double for all her sins.”\n",
+      "id": 2
     },
     {
       "id": 3,
-      "title": "Bible Study Gathering",
-      "timeStamp": "2025-03-22T19:00:00.000Z",
-      "description": "A group discussion diving deep into scripture, reflecting on its meaning and impact in our lives.",
+      "title": "Still new event!!",
+      "timeStamp": "2025-04-28T10:19",
+      "description": "brand new event!!!",
       "userId": 3,
-      "churchId": 2
-    },
-    {
-      "id": 4,
-      "title": "Youth Fellowship Meetup",
-      "timeStamp": "2025-03-24T16:00:00.000Z",
-      "description": "A social and spiritual gathering for young members to engage in fun activities and faith discussions.",
-      "userId": 4,
-      "churchId": 1
-    },
-    {
-      "id": 5,
-      "title": "Charity Outreach Program",
-      "timeStamp": "2025-03-30T10:00:00.000Z",
-      "description": "A day dedicated to helping the less fortunate through food drives and community service projects.",
-      "userId": 5,
-      "churchId": 2
-    },
-    {
-      "title": "Colins Event",
-      "timeStamp": "2025-03-06T22:46",
-      "description": "event ",
-      "userId": 6,
       "churchId": 1,
-      "id": 6
+      "bibleBook": "Jeremiah",
+      "bibleChapter": 33,
+      "bibleVerse": 14,
+      "bibleText": "“Behold, the days come,” says Yahweh, “that I will perform that good word which I have spoken concerning the house of Israel and concerning the house of Judah.\n"
     },
     {
-      "id": 7,
-      "title": "New Event",
-      "timeStamp": "2025-03-20T22:46",
-      "description": "Brand new event!",
-      "userId": 7,
-      "churchId": 2
+      "title": "A brand new event",
+      "timeStamp": "2025-04-14T08:27",
+      "description": "Just a new event",
+      "userId": 4,
+      "churchId": 3,
+      "bibleBook": "Leviticus",
+      "bibleChapter": 20,
+      "bibleVerse": 7,
+      "bibleText": "“‘Sanctify yourselves therefore, and be holy; for I am Yahweh your God.\n",
+      "id": 4
     }
   ],
   "userConfirmingEvent": [
     {
-      "userId": 6,
-      "eventId": 3,
-      "id": 2
+      "userId": 2,
+      "eventId": 1,
+      "id": 1
     },
     {
-      "userId": 6,
-      "eventId": 4,
+      "userId": 4,
+      "eventId": 2,
       "id": 3
     },
     {
-      "userId": 6,
-      "eventId": 5,
+      "userId": 4,
+      "eventId": 3,
       "id": 4
     }
   ]

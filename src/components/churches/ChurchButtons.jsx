@@ -27,15 +27,23 @@ export const ChurchButtons = ({ currentUser, churchObject }) => {
 
 
             return (
-                    <div>
+                    <div className="church-buttons">
+                      {currentUser.isAdmin === true ? (
+                        <div>
+                        <div className="church-buttons">
+                       <button 
+                        onClick={handleDelete}
+                      className="church-button">
+                          Delete
+                       </button>
+                         </div>
+                       </div> 
+                      ) : ( 
+                        <div></div>
+                      )}
                         {currentUser?.id === churchObject.creatorUserId ? (
                             <div>
                               <div className="church-buttons">
-                             <button 
-                              onClick={handleDelete}
-                            className="church-button">
-                                Delete
-                             </button>
                             <Link onClick={() => window.scrollTo(0, 0)} to={`/all-churches/edit/${churchObject.id}`} >
                               <button 
                               className="church-button" >

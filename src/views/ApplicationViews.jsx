@@ -15,6 +15,7 @@ import { NewEventForm } from "../components/forms/NewEvent";
 import { ProfilePage } from "../components/profile/Profile";
 import { EditProfile } from "../components/forms/EditProfile";
 import { MyEventList } from "../components/myEvents/MyEventsList";
+import { AdminViews } from "./AdminViews";
 
 export const ApplicationViews = () => {
     const [currentUser, setCurrentUser] = useState({})
@@ -25,28 +26,34 @@ export const ApplicationViews = () => {
         setCurrentUser(customerObject)
     }, [])
 
-    return <>
+    return ( <>
+    {currentUser.isAdmin ? (
+    <AdminViews currentUser={currentUser} />
+  ) : (
     <Routes>
-        <Route path="/" element={
-            <>
-            <NavBar currentUser={currentUser}/>
-            <Outlet />
-            </>}>
-            <Route index element={<Welcome />} />
-            <Route path="all-churches" element={<ChurchesList/>}/>
-            <Route path="new-church" element={<NewChurchForm currentUser={currentUser}/>}/>
-            <Route path="all-churches/:id" element={<ChurchDetails currentUser={currentUser}/>}/>
-            <Route path="all-churches/edit/:id" element={<EditChurchForm currentUser={currentUser}/>}/>
-            <Route path="all-events" element={<EventsList currentUser={currentUser}/>}/>
-            <Route path="my-events/:id" element={<MyEventList currentUser={currentUser}/>}/>
-            <Route path="new-event" element={<NewEventForm currentUser={currentUser}/>} />
-            <Route path="all-events/:id" element={<EventDetails currentUser={currentUser} />} />
-            <Route path="all-events/edit/:id" element={<EditEventForm currentUser={currentUser} />} />
-            <Route path="profile/:id" element={<ProfilePage currentUser={currentUser}/>}/>
-            <Route path="profile/edit/:id" element={<EditProfile currentUser={currentUser}/>}/>
-        </Route>
+    <Route path="/" element={
+        <>
+        <NavBar currentUser={currentUser}/>
+        <Outlet />
+        </>}>
+        <Route index element={<Welcome />} />
+        <Route path="all-churches" element={<ChurchesList/>}/>
+        <Route path="new-church" element={<NewChurchForm currentUser={currentUser}/>}/>
+        <Route path="all-churches/:id" element={<ChurchDetails currentUser={currentUser}/>}/>
+        <Route path="all-churches/edit/:id" element={<EditChurchForm currentUser={currentUser}/>}/>
+        <Route path="all-events" element={<EventsList currentUser={currentUser}/>}/>
+        <Route path="my-events/:id" element={<MyEventList currentUser={currentUser}/>}/>
+        <Route path="new-event" element={<NewEventForm currentUser={currentUser}/>} />
+        <Route path="all-events/:id" element={<EventDetails currentUser={currentUser} />} />
+        <Route path="all-events/edit/:id" element={<EditEventForm currentUser={currentUser} />} />
+        <Route path="profile/:id" element={<ProfilePage currentUser={currentUser}/>}/>
+        <Route path="profile/edit/:id" element={<EditProfile currentUser={currentUser}/>}/>
+    </Route>
 
-    </Routes>
+</Routes>
+  )}
+    
     
     </>
+    )
 }

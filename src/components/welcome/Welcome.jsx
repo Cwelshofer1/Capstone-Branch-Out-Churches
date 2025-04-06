@@ -1,4 +1,3 @@
-import treePng from './treeoflife.webp'
 import "./Welcome.css"
 
 export const Welcome = () => {
