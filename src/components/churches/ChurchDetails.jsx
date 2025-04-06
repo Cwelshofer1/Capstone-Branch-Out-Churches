@@ -27,10 +27,16 @@ return (
                 return (
                     <div className="church-container">
                         <div className="church-box">
+                        <div className="church-box-image-div">
+                            <img
+                            className="church-box-image"
+                            src={churchesObject.image}
+                            /></div>   
                         <div className="church-box-name">{churchesObject.name}</div>
                         <div className="church-box-address">Address: {churchesObject.address}</div>
                         <div className="church-box-number">Contact Number: {churchesObject.contactNumber}</div>
                         <div className="church-box-description">Description: {churchesObject.description}</div>
+                        
                     <ChurchButtons currentUser={currentUser} churchObject={churchesObject}/>
                     </div>
                     </div>

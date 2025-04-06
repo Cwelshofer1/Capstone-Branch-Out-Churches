@@ -71,7 +71,7 @@ return (
     <div>
       <div>Number of people attending: {eventsObject.userConfirmingEvent?.length} </div>
        
-                        {currentUser?.id === eventsObject.userId ? (
+                        {currentUser?.id === eventsObject.userId || currentUser.isAdmin === true  ? (
                             <div>
                               <div className="event-buttons">
                              <button 

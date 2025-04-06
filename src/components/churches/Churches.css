@@ -122,12 +122,29 @@
     justify-content: center;
     margin-top: 15px;
     gap: 15px;
-
 }
+
+.church-box-image{
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.church-box-image-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 900px) {
     .church-container{
         max-width: 375px; 
         
         
+    }
+}
+
+@media (max-width: 900px) {
+    .church-box-image {
+        max-width: 300px;
     }
 }

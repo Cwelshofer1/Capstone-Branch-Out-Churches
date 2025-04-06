@@ -1,0 +1,32 @@
+.all-users-container {
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    max-width: 900px; 
+    margin: 0 auto; 
+    
+}
+
+.all-users-box {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid #333;
+        border-radius: 8px;
+        padding: 15px;
+        margin-top: 15px;
+        background: hsla(0, 0%, 0%, 1);
+        background: radial-gradient(circle, hsla(0, 0%, 0%, 1) 60%, hsla(216, 41%, 79%, 1) 100%);
+        background: -moz-radial-gradient(circle, hsla(0, 0%, 0%, 1) 60%, hsla(216, 41%, 79%, 1) 100%); 
+        background: -webkit-radial-gradient(circle, hsla(0, 0%, 0%, 1) 60%, hsla(216, 41%, 79%, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#B5C6E0", GradientType=1 );
+        gap: 10px;
+        opacity: 1.0;
+    
+}
+
+.all-users-box-info {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}

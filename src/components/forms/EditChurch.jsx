@@ -35,6 +35,7 @@ const handleSave = (evt) => {
         contactNumber: church.contactNumber,
         description: church.description,
         creatorUserId: church.creatorUserId,
+        image: church.image
         
 
     }
@@ -105,6 +106,19 @@ const handleSave = (evt) => {
                         onChange={(evt) => {
                             const copy = { ...church }
                             copy.description = evt.target.value
+                            setAllChurches(copy)
+                        } } required className="form-container" />
+                        </div>
+                </fieldset>
+
+                <fieldset>
+                    <div className="form-group">
+                <label>Image Url:</label>
+                    <input type="url"
+                        value={church?.image}
+                        onChange={(evt) => {
+                            const copy = { ...church }
+                            copy.image = evt.target.value
                             setAllChurches(copy)
                         } } required className="form-container" />
                         </div>
